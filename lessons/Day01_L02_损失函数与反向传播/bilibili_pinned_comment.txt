@@ -1,0 +1,18 @@
+📌【第 02 课置顶学习笔记 & 课程结构图】建议点赞收藏方便复习！
+
+🔗 全套 60 期共用开源 GitHub 知识库（含高清结构图、完整笔记、可运行 PyTorch 代码 & 大厂面试题库）：
+👉 https://github.com/JJacksonchen/30-days-ai-expert
+
+🗺️ 本课核心知识结构图（现象 -> 原理/本质 -> 举例实战）：
+├─ 01 损失函数全景：MSE/Huber（回归）-> 交叉熵 -log(p) 与 Softmax 求导=p-y（切忌套双Softmax!）-> KL散度（蒸馏/RLHF拴狗绳）-> InfoNCE（多模态/RAG）
+├─ 02 梯度下降地形：高维鞍点 vs 狭长峡谷 vs 平坦谷底 -> Mini-Batch -> Warmup + Cosine / WSD 学习率调度
+├─ 03 手算反向传播：齿轮链式法则 -> 加法门原样分流 / 乘法门互换 -> 手算 1 步 Loss 从 9 归 0 -> 矩阵公式 dW = X.T @ dY -> 训练显存 4 大户拆账
+├─ 04 优化器进化史：SGD -> Momentum 动量 -> Adam 一阶+二阶矩 -> AdamW 解耦权重衰减 -> 2026 Muon 矩阵正交更新
+├─ 05 过拟合与诊断：欠拟合/过拟合曲线 -> Weight Decay / Dropout / Grokking 顿悟 -> 数据泄露三大暗坑
+└─ 06 排错三板斧 & 代码：过拟合单 Batch / 查初始 Loss / 监控 grad_norm -> 手撕 AdamW & 生产级混合精度+梯度累积主循环
+
+📝 今日 10 分钟打卡作业（欢迎评论区晒出你的答案！）：
+1. 手算一下 7B 模型做全参 AdamW 混合精度训练，光优化器状态就占多少 GB 显存？
+2. 跑通仓库里的 code_L02.py，亲眼验证手写 AdamW 与官方误差 < 1e-6！
+
+明天更新第 03 课（Day 2 上）：激活函数（到 SwiGLU）、RMSNorm、ResNet→DeepSeek mHC 与 GPU 屋顶线模型！
