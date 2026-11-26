@@ -66,16 +66,16 @@ flowchart TD
 | :--- | :--- | :--- | :--- |
 | **第 21 课** | Day 11 上 | `从0转行AI大模型，第21课：现代RAG底层原理！向量库HNSW图索引、BM25混合检索与Rerank重排` | 现象：企业知识库问答经常胡编乱造 👉 原理：跳表多层图HNSW近似检索、稀疏+稠密RRF融合、交叉编码器重排 👉 举例：先坐高铁再打车精准找书+完整Hybrid RAG代码 |
 | **第 22 课** | Day 11 下 | `从0转行AI大模型，第22课：企业级RAG踩坑实录！复杂PDF表格解析、语义切块、GraphRAG与召回归因` | 现象：RAG准确率卡在70%死活上不去 👉 原理：版面恢复、父子索引切块、知识图谱跨文档跳查与错因拆解 👉 举例：医疗/法务复杂PDF实战排雷清单 |
-| **第 23 课** | Day 12 上 | `从0转行AI大模型，第23课：告别玄学提示词！结构化输出约束解码、DSPy自动编译与SkillOpt技能自进化` | 现象：Prompt改一个标点线上业务全崩 👉 原理：JSON Schema有限状态机约束解码、把Prompt当代码编译优化 👉 举例：100%稳定吐JSON的底层原理+实战模板 |
+| **第 23 课** | Day 12 上 | `从0转行AI大模型，第23课：告别玄学提示词！结构化输出约束解码、DSPy自动编译与SkillOpt技能自进化` | 现象：Prompt改一个标点线上业务全崩 👉 原理：JSON Schema有限状态机约束解码、把Prompt当代码编译优化与技能文档自动迭代 👉 举例：100%稳定吐JSON的底层原理+实战模板 |
 | **第 24 课** | Day 12 下 | `从0转行AI大模型，第24课：AI Agent核心引擎！Function Calling协议、ReAct闭环与状态机编排` | 现象：Chatbot只会聊，Agent能自己查库发邮件 👉 原理：工具Schema注入、思考-行动-观察循环与有向图状态机 👉 举例：不调框架50行纯Python写出完整ReAct Agent |
-| **第 25 课** | Day 13 上 | `从0转行AI大模型，第25课：彻底讲透Agent Harness！为什么Agent=Model+Harness？一切皆插件架构` | 现象：同样大模型，套上顶级外壳战力翻十倍 👉 原理：Harness外壳、插件隔离、`historylist`全链路追踪与Token控费 👉 举例：F1引擎配顶级底盘变速箱+DeepSeek Harness拆解 |
-| **第 26 课** | Day 13 下 | `从0转行AI大模型，第26课：AI界的USB-C！MCP协议底层JSON-RPC通信、Server/Client开发与安全隔离` | 现象：每个模型接100个工具写100套胶水代码 👉 原理：M×N变M+N标准协议、stdio/SSE传输、工具资源提示词三原语 👉 举例：30行代码亲手写出一个可接入全平台的MCP Server |
-| **第 27 课** | Day 14 上 | `从0转行AI大模型，第27课：安全沙箱与Computer Use！Docker/MicroVM隔离与浏览器GUI视觉操作原理` | 现象：Agent帮我执行rm -rf删库怎么办 👉 原理：容器/微虚拟机权限沙箱、DOM树+屏幕坐标点击闭环 👉 举例：给AI套防爆手套安全操作网页与终端 |
-| **第 28 课** | Day 14 下 | `从0转行AI大模型，第28课：多智能体Multi-Agent协同架构！主控拆解、并行分工、交接协议与防死循环` | 现象：让5个Agent聊天结果互相夸了一小时烧光余额 👉 原理：Orchestrator-Worker拓扑、上下文隔离、最大步数与熔断仲裁 👉 举例：软件公司敏捷开发团队分工+防死锁设计 |
-| **第 29 课** | Day 15 上 | `从0转行AI大模型，第29课：Coding Agent深度拆解！代码库AST索引、精准Diff编辑、自动跑测与工程边界` | 现象：AI编程助手如何一次改对十几个文件 👉 原理：树sitter语法树检索、Search/Replace补丁机制、测试驱动自愈循环 👉 举例：拆解顶级Coding Agent工作流与Vibe Coding红线 |
-| **第 30 课** | Day 15 下 | `从0转行AI大模型，第30课：Agent记忆系统设计！短期上下文压缩、长期情景记忆与跨会话用户画像` | 现象：聊到第50轮Agent忘了最初目标且账单爆炸 👉 原理：滑动窗口+分层摘要、Episodic/Semantic双记忆库与遗忘机制 👉 举例：人脑工作记忆+笔记本+档案室三级记忆代码实现 |
-| **第 31 课** | Day 16 上 | `从0转行AI大模型，第31课：生产级Agent稳定性！全链路Trace追踪、失败重试、成本护栏与人工审批闸门` | 现象：Demo惊艳一上线天天超时扣费客诉 👉 原理：OpenTelemetry Trace、指数退避、预算熔断与高危动作HITL审批 👉 举例：支付/删数据前强制弹窗确认的生产级架构 |
-| **第 32 课** | Day 16 下 | `从0转行AI大模型，第32课：【阶段实战】从零打造带沙箱、MCP、记忆与Trace回放的企业级工程Agent！` | 现象：做出能直接写进简历的硬核Agent代表作 👉 原理：整合第21-31课全部组件端到端联调 👉 举例：完整GitHub可部署项目+架构演进复盘 |
+| **第 25 课** | Day 13 上 | `从0转行AI大模型，第25课：Agent Harness深度精讲（上）！为什么Agent=Model+Harness？外壳哲学与一切皆插件` | 现象：同款大模型换个外壳从玩具变顶级工程师 👉 原理：Model定智商上限 vs Harness定落地工程下限、一切皆插件（Tools/Skills/Hooks解耦）与运行时调度内核 👉 举例：F1引擎配顶级底盘变速箱+深度拆解DeepSeek Harness设计 |
+| **第 26 课** | Day 13 下 | `从0转行AI大模型，第26课：Agent Harness深度精讲（中）！上下文工程、historylist全链路追踪与Token控费` | 现象：Agent跑10轮就失忆发疯、一次任务烧光余额 👉 原理：Context Rot上下文腐化、`historylist`事件日志、KV前缀缓存命中、渐进式按需加载与自动压缩摘要 👉 举例：50轮长任务Token暴省70%且成功率翻倍实操 |
+| **第 27 课** | Day 14 上 | `从0转行AI大模型，第27课：Agent Harness深度精讲（下）！铁面验证闭环、沙箱隔离、Hooks护栏与评测驱动迭代` | 现象：Agent嘴上说改好了其实编译报错，或乱敲rm -rf 👉 原理：确定性验证闭环（单测/Linter/回滚）、Docker/MicroVM权限沙箱、Pre/Post Hooks拦截审批与Trace回放 👉 举例：手写带沙箱+Hooks+自愈验证的Production Harness |
+| **第 28 课** | Day 14 下 | `从0转行AI大模型，第28课：AI界的USB-C！MCP协议底层JSON-RPC通信、Server/Client开发与权限安全隔离` | 现象：每个模型接100个工具写100套胶水代码 👉 原理：M×N变M+N标准协议、stdio/SSE传输、Tools/Resources/Prompts三原语 👉 举例：30行代码手写可接入全平台的MCP Server |
+| **第 29 课** | Day 15 上 | `从0转行AI大模型，第29课：多智能体Multi-Agent协同与Computer Use！主控拆解、浏览器GUI操作与防死循环` | 现象：5个Agent互相夸了一小时烧光余额 👉 原理：Orchestrator-Worker隔离、交接协议、DOM+视觉GUI操作闭环与步数熔断 👉 举例：敏捷开发团队分工+防死锁状态机代码 |
+| **第 30 课** | Day 15 下 | `从0转行AI大模型，第30课：Coding Agent终极拆解！代码库AST索引、精准Diff编辑、自动跑测与Vibe Coding边界` | 现象：顶级编程Agent如何一次精准重构十几个文件 👉 原理：Tree-sitter语法树检索、Search/Replace补丁、测试驱动自愈循环与Harness协同 👉 举例：完整拆解工业级Coding Agent核心工作流 |
+| **第 31 课** | Day 16 上 | `从0转行AI大模型，第31课：Agent长期记忆与生产可观测性！情景/语义双记忆库、OpenTelemetry追踪与成本护栏` | 现象：跨天对话忘了用户偏好，线上报错难复现 👉 原理：Episodic/Semantic记忆检索与遗忘机制、全链路Trace与高危动作HITL审批 👉 举例：企业级Agent运维监控与预算熔断实战 |
+| **第 32 课** | Day 16 下 | `从0转行AI大模型，第32课：【阶段实战】从零打造带完整Harness、MCP、沙箱与Trace回放的企业级工程Agent！` | 现象：做出能直接写进简历拿大厂Offer的硬核Agent代表作 👉 原理：整合第21-31课全部Harness+MCP+记忆+验证闭环端到端联调 👉 举例：完整GitHub可部署项目+架构演进复盘 |
 
 ---
 
