@@ -1,22 +1,22 @@
-# 🚀 《30天从0转行AI：从小白到资深AI专家》全套开源知识库
+# 🚀 《从0转行AI大模型：AI应用工程师 & FDE 30天60期开源知识库》
 
 > **B站主讲频道**：`Jackson的AI笔记`  
-> **课程定位**：30 天 × 每天 2 节（早 07:00 + 晚 17:00）= **60 期硬核深度体系课**，每课 **25–30 分钟**。  
-> **核心教学法**：**现象 👉 原理/本质 👉 通俗易懂/举例讲透 + 可运行 PyTorch 代码 + 踩坑避雷 + 大厂面试真题**。  
-> **仓库用途**：全套 60 期课程共用开源仓库，持续同步每一课的**完整文字笔记、知识结构图（Mermaid）、可运行代码与面试速查卡**，欢迎 **Star ⭐ + Fork** 搭建属于你自己的 AI 知识体系！
+> **课程定位**：**不面向学术算法岗！专为零基础/传统开发/产品转行「AI 应用工程师 & FDE（前置部署工程师）」打造**。  
+> **核心讲法**：**零晦涩数学公式！严格遵循「现象 👉 底层本质 👉 生活例子讲透 + 直接拿来用的工程模板」**。  
+> **仓库用途**：全套 60 期课程共用开源知识库，持续同步每一课的**高清知识结构图（Mermaid）、大白话笔记、Vibe Coding 规则模板、可运行代码与 B 站置顶笔记**，欢迎 **Star ⭐ + Fork** 沉淀自己的 AI 知识体系！
 
 ---
 
-## 🗺️ 30 天 60 期总知识架构图
+## 🗺️ 30 天 60 期实战成长路线图
 
 ```mermaid
 flowchart TD
-    S1["第一阶段 Day 1-5 · 第01-10课<br/>底层数学、训练引擎、现代架构与手写Mini-GPT"]
-    S2["第二阶段 Day 6-10 · 第11-20课<br/>预训练、SFT/LoRA、RLHF/GRPO、蒸馏与多模态"]
-    S3["第三阶段 Day 11-16 · 第21-32课<br/>企业级RAG、AI Agent、DeepSeek Harness与MCP生态"]
-    S4["第四阶段 Day 17-22 · 第33-44课<br/>vLLM、FlashAttention、INT4/FP8量化与高并发网关"]
-    S5["第五阶段 Day 23-26 · 第45-52课<br/>世界模型、具身智能VLA、AI4Science与递归自学习RSI"]
-    S6["第六阶段 Day 27-30 · 第53-60课<br/>四大赛道定位、GitHub作品集、手撕代码与大厂答辩"]
+    S1["阶段一 Day 1-5 · 第01-10课<br/>大模型大白话原理 + 选型省钱 + Vibe Coding入门 + FDE揭秘"]
+    S2["阶段二 Day 6-10 · 第11-20课<br/>Vibe Coding 生产级工程实战：从0上线带登录支付的全栈AI产品"]
+    S3["阶段三 Day 11-16 · 第21-32课<br/>企业级RAG + Agent Harness深度三连(L25-27) + MCP万能协议"]
+    S4["阶段四 Day 17-22 · 第33-44课<br/>FDE企业级交付：旧系统接入、Eval评测驱动、省钱降延迟与合规"]
+    S5["阶段五 Day 23-26 · 第45-52课<br/>多模态/语音/金融/法务/电商/制造真实落地方案拆解"]
+    S6["阶段六 Day 27-30 · 第53-60课<br/>AI应用/FDE作品集包装、现场系统设计面试与结业大考"]
 
     S1 --> S2 --> S3 --> S4 --> S5 --> S6
 ```
@@ -25,29 +25,15 @@ flowchart TD
 
 ## 📚 已更新课程目录（持续日更）
 
-| 课次 | 日程 | 课程主题 | 核心知识点 | 笔记 & 结构图 | 实战代码 | B站置顶笔记 |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **第 01 课** | Day 1 上 | 数学底层与神经网络本质 | 向量/余弦相似度、矩阵空间变换、`[B,T,D]` 广播与 Stride、XOR 折弯证明、Safe Softmax | [笔记与结构图](./lessons/Day01_L01_数学底层与神经网络/README.md) | [code_L01.py](./lessons/Day01_L01_数学底层与神经网络/code_L01.py) | [置顶评论](./lessons/Day01_L01_数学底层与神经网络/bilibili_pinned_comment.txt) |
-| **第 02 课** | Day 1 下 | 机器学习核心引擎全解 | MSE/CE/KL/InfoNCE、高维地形与鞍点、手算链式法则、Autograd 显存账、SGD→AdamW→Muon | [笔记与结构图](./lessons/Day01_L02_损失函数与反向传播/README.md) | [code_L02.py](./lessons/Day01_L02_损失函数与反向传播/code_L02.py) | [置顶评论](./lessons/Day01_L02_损失函数与反向传播/bilibili_pinned_comment.txt) |
-| **第 03 课** | Day 2 上 | 深层网络组件与 GPU 屋顶线 | Sigmoid→ReLU→GELU→SwiGLU、BN/LN/RMSNorm、ResNet→DeepSeek mHC、CNN 与 Roofline 算力账 | [笔记与结构图](./lessons/Day02_L03_激活残差卷积与GPU/README.md) | [code_L03.py](./lessons/Day02_L03_激活残差卷积与GPU/code_L03.py) | [置顶评论](./lessons/Day02_L03_激活残差卷积与GPU/bilibili_pinned_comment.txt) |
-| **第 04 课** | Day 2 下 | Transformer 心脏与 KV Cache | BPE 分词、RoPE 旋转位置编码、Self-Attention 手算与 `/sqrt(d_k)`、KV Cache 显存公式、GQA/MLA | [笔记与结构图](./lessons/Day02_L04_Transformer与KVCache/README.md) | [code_L04.py](./lessons/Day02_L04_Transformer与KVCache/code_L04.py) | [置顶评论](./lessons/Day02_L04_Transformer与KVCache/bilibili_pinned_comment.txt) |
-| **第 05 课** | Day 3 上 | 万亿现代架构与多卡并行 | DeepSeekMoE 细粒度路由与无辅助损失均衡、MTP 投机加速、Chinchilla 缩放律、DP/ZeRO/TP/PP/EP | [笔记与结构图](./lessons/Day03_L05_MoE缩放定律与多卡并行/README.md) | [code_L05.py](./lessons/Day03_L05_MoE缩放定律与多卡并行/code_L05.py) | [置顶评论](./lessons/Day03_L05_MoE缩放定律与多卡并行/bilibili_pinned_comment.txt) |
-
----
-
-## 🛠️ 本地一键运行所有实战代码
-
-```bash
-git clone https://github.com/JJacksonchen/30-days-ai-expert.git
-cd 30-days-ai-expert
-pip install torch numpy
-python lessons/Day01_L01_数学底层与神经网络/code_L01.py
-```
+| 课次 | 日程 | 统一 B 站课程标题 | 一句话生活比喻核心记忆点 | 笔记 & 结构图 | 置顶评论笔记 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **第 01 课** | Day 1 上 | 从0转行AI大模型，第01课：别再死磕算法了！AI应用工程师和FDE到底干啥？生活例子讲透大模型原理 | 造发动机 vs 开车队；成语卡片(Token)、外卖打分卡(向量)、群聊查资料(Attention)、超级接龙 | [L01 笔记与代码](./lessons/L01_AI应用定位与大模型原理/README.md) | [L01 置顶](./lessons/L01_AI应用定位与大模型原理/bilibili_pinned_comment.txt) |
+| **第 02 课** | Day 1 下 | 从0转行AI大模型，第02课：为什么AI有时聪明有时胡说？一课讲透幻觉、上下文腐化、温度与慢思考 | 怕交白卷的即兴演说家(幻觉)、杂乱办公桌(Context Rot)、酒精浓度(温度)、草稿纸验算(慢思考) | [L02 笔记与模板](./lessons/L02_幻觉上下文与慢思考/README.md) | [L02 置顶](./lessons/L02_幻觉上下文与慢思考/bilibili_pinned_comment.txt) |
+| **第 03 课** | Day 2 上 | 从0转行AI大模型，第03课：AI应用工程师怎么挑模型省90%钱？看懂MoE、KV缓存、API算账与选型策略 | 三甲医院分诊台(MoE)、读书浓缩速记本(KV/MLA/前缀缓存)、前台分发+旗舰兜底(路由省90%) | [L03 笔记与算账](./lessons/L03_模型选型与省钱算账/README.md) | [L03 置顶](./lessons/L03_模型选型与省钱算账/bilibili_pinned_comment.txt) |
+| **第 04 课** | Day 2 下 | 从0转行AI大模型，第04课：彻底告别手敲代码！Vibe Coding实战心法：零基础如何用AI做出上线级产品 | 建筑总包工头盖别墅：先写需求/蓝图/规则三张纸 + 测试亮绿灯验收 + Git 15分钟存盘后悔药 | [L04 笔记与规则模板](./lessons/L04_VibeCoding实战心法/README.md) | [L04 置顶](./lessons/L04_VibeCoding实战心法/bilibili_pinned_comment.txt) |
+| **第 05 课** | Day 3 上 | 从0转行AI大模型，第05课：年薪百万最火新岗FDE全揭秘！前置部署工程师如何把AI真正落地进企业 | 卖砖头 vs 精装拎包入住；企业AI铁三角 = Harness底盘 + MCP Type-C口 + Eval碰撞实验考卷 | [L05 笔记与路线](./lessons/L05_百万新岗FDE全揭秘/README.md) | [L05 置顶](./lessons/L05_百万新岗FDE全揭秘/bilibili_pinned_comment.txt) |
 
 ---
 
 ## 📖 完整 60 期体系总课表
-
-完整 60 期规划见 [SYLLABUS_60_LESSONS.md](./SYLLABUS_60_LESSONS.md)。
-
-> 如果这套开源课程帮到了正在转行或进阶的你，欢迎点个 **Star ⭐** 并在 B 站视频下方打卡交流！
+详见 [SYLLABUS_60_LESSONS.md](./SYLLABUS_60_LESSONS.md)。
